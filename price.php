@@ -52,7 +52,7 @@ function price_init() {
 
 		// 割引後価格
 		$cashback = false;
-		if (array_key_exists('cashback', $atts)) {
+		if (array_key_exists('cashback', $atts) && $atts['cashback'] == 'true') {
 			$cashback = true;
 		}
 		
